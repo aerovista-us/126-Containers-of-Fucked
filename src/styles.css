@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0612;
+  --color-ink: #f4f1ea;
+  --color-muted: #a89bb8;
+  --color-mag: #e879f9;
+  --color-amber: #f5a524;
+  --color-acid: #39ff88;
+  --color-line: #2a2238;
+  --font-display: "Anton", Impact, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    min-height: 100%;
+  }
+
+  body {
+    font-family: var(--font-mono);
+    margin: 0;
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes scan {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 8px;
+  }
+}
+
+.still-drift {
+  animation: drift 14s ease-in-out alternate infinite;
+}
+
+.scanlines {
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 2px,
+    rgb(0 0 0 / 0.18) 2px 3px
+  );
+  animation: scan 0.8s linear infinite;
+  mix-blend-mode: multiply;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .still-drift,
+  .scanlines {
+    animation: none;
+  }
+}

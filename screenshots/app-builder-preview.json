@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "126 Containers",
+      "hasCanvas": false,
+      "bodyTextLen": 246,
+      "bodyTextHash": "e2b1495e697dfd3886e62073034da3f4ce378beed41b3f6ba5c581e9b0559b17",
+      "bodyTextPrefix": "126 CONTAINERS OF FUCKED · AEROVISTA BIBLE SCENES EP 02 PILOT EP",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "126 Containers",
+      "hasCanvas": false,
+      "bodyTextLen": 246,
+      "bodyTextHash": "e2b1495e697dfd3886e62073034da3f4ce378beed41b3f6ba5c581e9b0559b17",
+      "bodyTextPrefix": "126 CONTAINERS OF FUCKED · AEROVISTA BIBLE SCENES EP 02 PILOT EP",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
