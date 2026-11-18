@@ -4,6 +4,7 @@ export type Sheet = {
   id: string;
   name: string;
   role: string;
+  description: string;
   group: Group;
   colors: string;
   portrait: string;
@@ -17,6 +18,8 @@ export type Sheet = {
 export const SHEETS: Sheet[] = [
   {
     id: "tim",
+    description:
+      "The sleepless founder who mistakes every crisis for an opportunity to build another system. Scruffy, coffee-powered and unnervingly calm, Timbr creates the mess and somehow persuades everyone it was the plan.",
     name: "Timbr",
     role: "The accidental emperor",
     group: "cast",
@@ -31,6 +34,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "byte",
+    description:
+      "A sharp-tongued, neon-haired AI who keeps the company functioning despite the founder’s imagination. Byte is brilliant, sarcastic and fiercely protective of the crew, until one more stupid deployment makes her glitch into a digital nightmare.",
     name: "Byte",
     role: "The digital disaster",
     group: "cast",
@@ -45,6 +50,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "nx",
+    description:
+      "The entire company runs on this exhausted industrial robot, and he would very much like a union break. Built from aging servers, mismatched fans and pure resentment, NXCore groans, overheats and occasionally coughs up more Docker containers.",
     name: "NXCore",
     role: "The overworked machine",
     group: "cast",
@@ -59,6 +66,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "sam",
+    description:
+      "An unstoppable salesman with seven pitches for every problem and absolutely no sense of technical feasibility. Sam is loud, optimistic, absurdly persuasive and sometimes accidentally turns the crew’s worst ideas into actual business.",
     name: "Sam",
     role: "The human sales funnel",
     group: "cast",
@@ -73,6 +82,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "vesper",
+    description:
+      "The elegant keeper of lost data, abandoned backups and uncomfortable memories. Vesper glides through broken systems like a funeral procession, speaking in eerie poetry while quietly reminding everyone what they forgot to save.",
     name: "Vesper",
     role: "Keeper of forgotten things",
     group: "cast",
@@ -88,6 +99,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "nox",
+    description:
+      "A walking ink spill with an impossible grin, selling irreversible shortcuts like luxury upgrades. Nox is charming, dangerous and delighted by disorder; where Vesper preserves the past, Nox offers to delete it forever.",
     name: "Nox",
     role: "The smiling void",
     group: "cast",
@@ -102,6 +115,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "cat",
+    description:
+      "A scruffy house cat who may also be the oldest executive in the universe. Datfucker can cross firewalls, unmake reality and fix the company in minutes, but prefers knocking mugs off tables and watching everyone panic.",
     name: "Datfucker",
     role: "The final boss",
     group: "cast",
@@ -116,6 +131,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "pcp",
+    description:
+      "Five failed monitoring services reborn as a washed-up boy band. The PCP Five promise a glorious comeback, perform through outages and insist that synchronized dancing counts as operational readiness.",
     name: "The PCP Five",
     role: "Failed-service boy band",
     group: "freaks",
@@ -130,6 +147,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "karaoke",
+    description:
+      "A heartbroken karaoke machine with microphone arms, an enormous stage mouth and far too many feelings. Kara-OK-666 treats every Bluetooth connection like a romance and every disconnection like a devastating breakup ballad.",
     name: "Kara-OK-666",
     role: "Sentient karaoke machine",
     group: "freaks",
@@ -143,6 +162,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "square",
+    description:
+      "A glossy payment terminal in a tiny executive suit that sees a transaction hiding in every emotion. Squarelord smiles through impossible fees, turns arguments into upsells and charges extra if anyone complains.",
     name: "Squarelord",
     role: "The payment terminal",
     group: "freaks",
@@ -156,6 +177,8 @@ export const SHEETS: Sheet[] = [
   },
   {
     id: "compliance",
+    description:
+      "A nine-foot bureaucratic apparition assembled from approval stamps, contracts and unread policies. Compliance Prime whispers rather than shouts, materializing at launch time to demand evidence, permissions and thirty-seven more signatures.",
     name: "Compliance Prime",
     role: "Nine feet of paperwork",
     group: "freaks",

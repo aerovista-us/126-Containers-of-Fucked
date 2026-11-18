@@ -121,6 +121,9 @@ function CharacterCard({
         <span className="block px-3 pt-1 font-mono text-xs tracking-wide text-muted uppercase">
           {sheet.role}
         </span>
+        <span className="block px-3 pt-3 font-mono text-sm leading-relaxed text-ink">
+          {sheet.description}
+        </span>
         <span className="block px-3 py-3 font-mono text-xs tracking-widest text-mag uppercase">
           {open ? "− Close character dossier" : "+ Open character dossier"}
         </span>
@@ -149,7 +152,7 @@ export function BibleView() {
   const visible = SHEETS.filter((s) => {
     if (filter !== "all" && s.group !== filter) return false;
     if (!normalizedQuery) return true;
-    return [s.name, s.role, s.look, s.personality, s.gag, s.plays]
+    return [s.name, s.role, s.description, s.look, s.personality, s.gag, s.plays]
       .join(" ")
       .toLowerCase()
       .includes(normalizedQuery);
