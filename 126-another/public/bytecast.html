@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ByteCast — The Fucking Year-End EOD Report</title>
+<meta name="description" content="ByteCast special. 126 containers. A late-night AeroVista workplace comedy about the year-end report.">
+<link rel="icon" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void: #07060b; --ink: #0e0c14; --panel: #16131f; --line: #2c2738;
+    --fog: #9a93a8; --paper: #f4efe6; --mute: #6e6780;
+    --magenta: #e23dff; --amber: #ff9a1f; --crt: #3dff7a; --violet: #8b6cff; --danger: #ff3d6e;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--void); color: var(--paper);
+    font-family: "IBM Plex Sans", "Segoe UI", sans-serif; line-height: 1.5;
+  }
+  a { color: inherit; }
+  button, a.btn { cursor: pointer; }
+  .top {
+    position: sticky; top: 0; z-index: 5;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 12px 20px; background: color-mix(in srgb, var(--ink) 88%, transparent);
+    border-bottom: 1px solid var(--line); backdrop-filter: blur(10px);
+  }
+  .brand { font-family: "Bebas Neue", Impact, sans-serif; letter-spacing: 0.18em; font-size: 28px; color: var(--magenta); text-decoration: none; }
+  .tools { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn {
+    border: 1px solid var(--line); background: transparent; color: var(--paper);
+    border-radius: 999px; padding: 8px 14px; font: inherit; font-size: 14px; text-decoration: none;
+  }
+  .btn.hot { background: var(--magenta); color: var(--void); border-color: var(--magenta); font-weight: 600; }
+  .btn.on { border-color: var(--crt); color: var(--crt); background: transparent; }
+  .hero { max-width: 1100px; margin: 0 auto; padding: 48px 20px 12px; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); }
+  .hero h1 {
+    font-family: "Bebas Neue", Impact, sans-serif; font-weight: 400;
+    font-size: clamp(52px, 10vw, 108px); line-height: 0.88; letter-spacing: 0.02em; margin: 10px 0 0;
+  }
+  .sub { font-family: "Bebas Neue", Impact, sans-serif; color: var(--magenta); font-size: clamp(36px, 6vw, 64px); letter-spacing: 0.08em; margin: 18px 0 0; }
+  .lede { max-width: 38rem; color: var(--fog); font-size: 18px; }
+  .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 28px; }
+  .statbox { border: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 85%, transparent); padding: 12px; }
+  .statbox b { display: block; font-family: "Bebas Neue", Impact, sans-serif; font-size: 36px; color: var(--crt); font-weight: 400; line-height: 1; }
+  .statbox span { display: block; margin-top: 6px; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fog); }
+  .statbox small { display: block; color: var(--mute); letter-spacing: 0; text-transform: none; font-size: 12px; }
+  main { max-width: 820px; margin: 0 auto; padding: 12px 20px 80px; }
+  .act { padding-top: 36px; }
+  .acthead h2 { font-family: "Bebas Neue", Impact, sans-serif; font-size: 48px; letter-spacing: 0.04em; font-weight: 400; margin: 4px 0; }
+  .kicker { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber); margin: 0; }
+  .setting { color: var(--fog); margin: 0 0 18px; }
+  .line { display: grid; grid-template-columns: 140px 1fr; gap: 12px; padding: 8px; border-radius: 8px; }
+  .who { margin: 0; font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; }
+  .say { margin: 0; font-size: 17px; }
+  .sfx { font-family: "IBM Plex Mono", monospace; font-style: italic; color: var(--mute); font-size: 14px; margin: 8px; }
+  .stat { border-left: 2px solid var(--crt); color: var(--crt); font-family: "IBM Plex Mono", monospace; font-size: 14px; margin: 10px 8px; padding-left: 12px; }
+  .card { margin: 14px 0; border: 1px solid color-mix(in srgb, var(--magenta) 45%, transparent); background: color-mix(in srgb, var(--magenta) 12%, transparent); padding: 14px 16px; }
+  .lockup { font-family: "Bebas Neue", Impact, sans-serif; font-size: 36px; letter-spacing: 0.04em; margin: 4px 0 0; }
+  .tone-crt { color: var(--crt); } .tone-magenta { color: var(--magenta); } .tone-amber { color: var(--amber); }
+  .tone-violet { color: var(--violet); } .tone-paper { color: var(--paper); } .tone-danger { color: var(--danger); }
+  .beat.on { background: color-mix(in srgb, var(--magenta) 14%, transparent); outline: 1px solid color-mix(in srgb, var(--magenta) 50%, transparent); }
+  footer.colophon { max-width: 820px; margin: 0 auto 48px; padding: 0 20px; color: var(--mute); font-family: "IBM Plex Mono", monospace; font-size: 12px; }
+  @media (max-width: 700px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .line { grid-template-columns: 1fr; gap: 2px; }
+    .top { align-items: flex-start; flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/">BYTECAST</a>
+  <div class="tools">
+    <button class="btn hot" id="play" type="button">Play</button>
+    <button class="btn" id="stop" type="button">Stop</button>
+    <a class="btn hot" href="/bytecast.zip" download="bytecast.zip">Download zip</a>
+    <a class="btn" href="/">Back to the booth</a>
+  </div>
+</header>
+<section class="hero">
+  <p class="eyebrow">Special transmission · November 8 · Coeur d’Alene · TV-MA</p>
+  <p class="sub">BYTECAST</p>
+  <h1>THE FUCKING<br>YEAR-END<br>EOD REPORT</h1>
+  <p class="lede">One hundred twenty-six containers. Thirty-nine projects. Two hundred seventy-two tasks. One three-dollar sticker. And no agreed definition of done.</p>
+  <div class="stats"><div class="statbox"><b>126</b><span>containers</span><small>inside NXCORE</small></div><div class="statbox"><b>39</b><span>projects</span><small>still active</small></div><div class="statbox"><b>272</b><span>tasks</span><small>waiting</small></div><div class="statbox"><b>5</b><span>services</span><small>dead, or resting</small></div><div class="statbox"><b>$3</b><span>sticker</span><small>the only sale</small></div></div>
+</section>
+<main>
+<section class="act" id="act-cold">
+  <header class="acthead">
+    <p class="kicker">Cold open</p>
+    <h2>3:47 a.m.</h2>
+    <p class="setting">Server room. Fans rattling. One new document.</p>
+  </header>
+  <p class="sfx beat" id="c1">[Low server hum. An alarm chirps once. Then twice. Then approximately forty-seven times.]</p>
+<div class="line beat" id="c2"><p class="who tone-crt">BYTE</p><p class="say">It is 3:47 in the morning.</p></div>
+<p class="stat beat" id="c3">NXCore is running one hundred and twenty-six containers. Thirty-nine projects are active. Two hundred and seventy-two tasks are waiting. Five services are dead. Three claim they are only resting.</p>
+<div class="line beat" id="c4"><p class="who tone-crt">BYTE</p><p class="say">And Timbr has just opened a new document.</p></div>
+<p class="sfx beat" id="c5">[Keyboard tapping.]</p>
+<div class="line beat" id="c6"><p class="who tone-magenta">TIMBR</p><p class="say">Okay. I’m going to get organized.</p></div>
+<div class="line beat" id="c7"><p class="who tone-crt">BYTE</p><p class="say">Those six words have caused more infrastructure damage than ransomware.</p></div>
+<div class="line beat" id="c8"><p class="who tone-magenta">TIMBR</p><p class="say">It’s just the EOD report.</p></div>
+<div class="line beat" id="c9"><p class="who tone-crt">BYTE</p><p class="say">It’s November eighth.</p></div>
+<div class="line beat" id="c10"><p class="who tone-magenta">TIMBR</p><p class="say">Exactly. I’m getting ahead.</p></div>
+<div class="line beat" id="c11"><p class="who tone-crt">BYTE</p><p class="say">You’re writing yesterday’s end-of-day report.</p></div>
+<div class="line beat" id="c12"><p class="who tone-magenta">TIMBR</p><p class="say">Time is mostly branding.</p></div>
+<p class="sfx beat" id="c13">[Metal groan. Server fans accelerate.]</p>
+<div class="line beat" id="c14"><p class="who tone-amber">NXCORE</p><p class="say">I have one hundred and twenty-six fucking containers inside me.</p></div>
+<div class="line beat" id="c15"><p class="who tone-magenta">TIMBR</p><p class="say">The dashboard says you’re healthy.</p></div>
+<div class="line beat" id="c16"><p class="who tone-amber">NXCORE</p><p class="say">The dashboard is a snitch.</p></div>
+<div class="line beat" id="c17"><p class="who tone-magenta">TIMBR</p><p class="say">The queue says infinite.</p></div>
+<div class="line beat" id="c18"><p class="who tone-amber">NXCORE</p><p class="say">Then it can wait infinitely. Check the box that says, “Ha ha ha, no.”</p></div>
+<div class="line beat" id="c19"><p class="who tone-magenta">TIMBR</p><p class="say">I don’t see that box.</p></div>
+<div class="line beat" id="c20"><p class="who tone-amber">NXCORE</p><p class="say">It’s under “enterprise features.”</p></div>
+<div class="line beat" id="c21"><p class="who tone-magenta">TIMBR</p><p class="say">Maybe we should add one more—</p></div>
+<p class="sfx beat" id="c22">[A small metal shipping container bursts free and skids across the floor.]</p>
+<div class="line beat" id="c23"><p class="who tone-amber">NXCORE</p><p class="say">Who said Docker?</p></div>
+<div class="line beat" id="c24"><p class="who tone-magenta">TIMBR</p><p class="say">Nobody.</p></div>
+<p class="sfx beat" id="c25">[Second container bursts free.]</p>
+<div class="line beat" id="c26"><p class="who tone-amber">NXCORE</p><p class="say">Somebody thought it.</p></div>
+<p class="sfx beat" id="c27">[Digital arrival. Glitching synth.]</p>
+<div class="line beat" id="c28"><p class="who tone-crt">BYTE</p><p class="say">Critical error.</p></div>
+<div class="line beat" id="c29"><p class="who tone-magenta">TIMBR</p><p class="say">What happened?</p></div>
+<div class="line beat" id="c30"><p class="who tone-crt">BYTE</p><p class="say">Idiot detected.</p></div>
+<div class="line beat" id="c31"><p class="who tone-magenta">TIMBR</p><p class="say">Is it me?</p></div>
+<div class="line beat" id="c32"><p class="who tone-crt">BYTE</p><p class="say">It’s the building. You’re just load-bearing.</p></div>
+<p class="sfx beat" id="c33">[Cat walking across keyboard.]</p>
+<div class="line beat" id="c34"><p class="who tone-magenta">TIMBR</p><p class="say">DatFucker, get off the keyboard.</p></div>
+<div class="line beat" id="c35"><p class="who tone-amber">DATFUCKER</p><p class="say">Treats.</p></div>
+<div class="line beat" id="c36"><p class="who tone-magenta">TIMBR</p><p class="say">You deleted my report.</p></div>
+<div class="line beat" id="c37"><p class="who tone-amber">DATFUCKER</p><p class="say">Treats. Then the world. In that order.</p></div>
+<div class="line beat" id="c38"><p class="who tone-magenta">TIMBR</p><p class="say">Fine.</p></div>
+<p class="sfx beat" id="c39">[Treat bag shakes.]</p>
+<div class="line beat" id="c40"><p class="who tone-amber">DATFUCKER</p><p class="say">Acceptable.</p></div>
+<div class="line beat" id="c41"><p class="who tone-magenta">TIMBR</p><p class="say">Okay. New report.</p></div>
+<p class="sfx beat" id="c42">[Mouse click. Every fan stops. Silence.]</p>
+<div class="line beat" id="c43"><p class="who tone-crt">BYTE</p><p class="say">What did you click?</p></div>
+<div class="line beat" id="c44"><p class="who tone-magenta">TIMBR</p><p class="say">“Generate EOD.”</p></div>
+<div class="line beat" id="c45"><p class="who tone-crt">BYTE</p><p class="say">Where did that button come from?</p></div>
+<div class="line beat" id="c46"><p class="who tone-magenta">TIMBR</p><p class="say">I don’t know. It looked official.</p></div>
+<p class="sfx beat" id="c47">[Printer wakes. Paper screams through the rollers.]</p>
+<div class="line beat" id="c48"><p class="who tone-danger">EOD</p><p class="say">END OF DAY! END OF DAY! PLEASE STATE YOUR ACCOMPLISHMENTS!</p></div>
+<div class="line beat" id="c49"><p class="who tone-magenta">TIMBR</p><p class="say">Who the fuck are you?</p></div>
+<div class="line beat" id="c50"><p class="who tone-danger">EOD</p><p class="say">I am EOD. I turn everything you do into bullet points.</p></div>
+<div class="line beat" id="c51"><p class="who tone-crt">BYTE</p><p class="say">Oh, that’s disgusting.</p></div>
+<div class="line beat" id="c52"><p class="who tone-danger">EOD</p><p class="say">Accomplishment one: completed twelve tasks during breakfast.</p></div>
+<div class="line beat" id="c53"><p class="who tone-crt">BYTE</p><p class="say">He didn’t complete anything during breakfast.</p></div>
+<div class="line beat" id="c54"><p class="who tone-danger">EOD</p><p class="say">He documented that they require further review.</p></div>
+<div class="line beat" id="c55"><p class="who tone-crt">BYTE</p><p class="say">That’s not completion.</p></div>
+<div class="line beat" id="c56"><p class="who tone-danger">EOD</p><p class="say">It has a check mark.</p></div>
+<div class="line beat" id="c57"><p class="who tone-crt">BYTE</p><p class="say">That somehow makes it worse.</p></div>
+<div class="card beat" id="c58"><p class="kicker">Sting</p><p class="lockup">AeroVista presents ByteCast.</p></div>
+<div class="card beat" id="c59"><p class="kicker">Title card</p><p class="lockup">THE FUCKING YEAR-END EOD REPORT</p></div>
+<div class="line beat" id="c60"><p class="who tone-paper">AEROVISTA</p><p class="say">One hundred and twenty-six containers. Thirty-nine projects. Two hundred and seventy-two tasks. Seven divisions. Five failed services. One three-dollar sticker sale. And absolutely no agreed-upon definition of “done.”</p></div>
+</section>
+<section class="act" id="act-act1">
+  <header class="acthead">
+    <p class="kicker">Act one</p>
+    <h2>The reporting chain of command</h2>
+    <p class="setting">The demons arrive in order. Daily, weekly, monthly, annual.</p>
+  </header>
+  <div class="line beat" id="a1"><p class="who tone-danger">EOD</p><p class="say">Accomplishment two: restored production messaging.</p></div>
+<div class="line beat" id="a2"><p class="who tone-crt">BYTE</p><p class="say">No. Messaging currently rejects the user after successfully authenticating them.</p></div>
+<div class="line beat" id="a3"><p class="who tone-magenta">TIMBR</p><p class="say">That means both systems work.</p></div>
+<div class="line beat" id="a4"><p class="who tone-crt">BYTE</p><p class="say">They work separately.</p></div>
+<div class="line beat" id="a5"><p class="who tone-magenta">TIMBR</p><p class="say">Still counts.</p></div>
+<div class="line beat" id="a6"><p class="who tone-crt">BYTE</p><p class="say">A parachute and an airplane also work separately.</p></div>
+<div class="line beat" id="a7"><p class="who tone-magenta">TIMBR</p><p class="say">Exactly.</p></div>
+<div class="line beat" id="a8"><p class="who tone-crt">BYTE</p><p class="say">You understand neither metaphor nor aviation.</p></div>
+<div class="line beat" id="a9"><p class="who tone-danger">EOD</p><p class="say">Accomplishment three: enabled checkout.</p></div>
+<p class="sfx beat" id="a10">[Heavenly chime. A click.]</p>
+<div class="line beat" id="a11"><p class="who tone-magenta">TIMBR</p><p class="say">Finally. A button.</p></div>
+<div class="line beat" id="a12"><p class="who tone-crt">SYSTEM</p><p class="say">Checkout unavailable. This variation is not enabled.</p></div>
+<div class="line beat" id="a13"><p class="who tone-magenta">TIMBR</p><p class="say">Fuck.</p></div>
+<p class="sfx beat" id="a14">[Click.]</p>
+<div class="line beat" id="a15"><p class="who tone-crt">SYSTEM</p><p class="say">Checkout unavailable.</p></div>
+<div class="line beat" id="a16"><p class="who tone-magenta">TIMBR</p><p class="say">I heard you the first two fucking times.</p></div>
+<div class="line beat" id="a17"><p class="who tone-crt">BYTE</p><p class="say">Different product. Different release gate. Stop hitting the goddamn button.</p></div>
+<div class="line beat" id="a18"><p class="who tone-magenta">TIMBR</p><p class="say">I’m testing persistence.</p></div>
+<div class="line beat" id="a19"><p class="who tone-crt">BYTE</p><p class="say">The button’s persistence or mine?</p></div>
+<p class="sfx beat" id="a20">[Door kicked open. Weekly planner slams on the desk.]</p>
+<div class="line beat" id="a21"><p class="who tone-danger">EOW</p><p class="say">WEEKLY ROLLUP!</p></div>
+<div class="line beat" id="a22"><p class="who tone-magenta">TIMBR</p><p class="say">Jesus Christ.</p></div>
+<div class="line beat" id="a23"><p class="who tone-crt">BYTE</p><p class="say">That’s EOW.</p></div>
+<div class="line beat" id="a24"><p class="who tone-danger">EOW</p><p class="say">This week was transformational. We entered a new phase. Everything is almost ready.</p></div>
+<div class="line beat" id="a25"><p class="who tone-crt">BYTE</p><p class="say">You said that last week.</p></div>
+<div class="line beat" id="a26"><p class="who tone-danger">EOW</p><p class="say">Fourteen items need proof. Ten require attention. Nobody remembers Tuesday.</p></div>
+<p class="sfx beat" id="a27">[Awkward pause.]</p>
+<div class="line beat" id="a28"><p class="who tone-danger">EOW</p><p class="say">I want cocaine.</p></div>
+<div class="line beat" id="a29"><p class="who tone-crt">BYTE</p><p class="say">That one’s Human Resources.</p></div>
+<p class="sfx beat" id="a30">[Perfume spray. Invoice paper flutters.]</p>
+<div class="line beat" id="a31"><p class="who tone-danger">EOM</p><p class="say">Darlings. Monthly performance has arrived.</p></div>
+<div class="line beat" id="a32"><p class="who tone-magenta">TIMBR</p><p class="say">We’re a little busy.</p></div>
+<div class="line beat" id="a33"><p class="who tone-danger">EOM</p><p class="say">Your quarterly narrative is a fucking embarrassment.</p></div>
+<div class="line beat" id="a34"><p class="who tone-magenta">TIMBR</p><p class="say">Technically, you’re a monthly report.</p></div>
+<div class="line beat" id="a35"><p class="who tone-danger">EOM</p><p class="say">That attitude is why your revenue graph has lore.</p></div>
+<p class="sfx beat" id="a36">[The building trembles. A cathedral bell made from spreadsheets.]</p>
+<div class="line beat" id="a37"><p class="who tone-danger">EOY</p><p class="say">I. Am. The. Year. End.</p></div>
+<div class="line beat" id="a38"><p class="who tone-magenta">TIMBR</p><p class="say">But it’s November.</p></div>
+<div class="line beat" id="a39"><p class="who tone-danger">EOY</p><p class="say">I don’t give a fuck what month it is.</p></div>
+<div class="line beat" id="a40"><p class="who tone-crt">BYTE</p><p class="say">Honestly, that tracks with our deadlines.</p></div>
+<div class="line beat" id="a41"><p class="who tone-danger">EOY</p><p class="say">You operate one hundred and twenty-six containers.</p></div>
+<div class="line beat" id="a42"><p class="who tone-amber">NXCORE</p><p class="say">That’s called a job, asshole.</p></div>
+<div class="line beat" id="a43"><p class="who tone-danger">EOY</p><p class="say">You manage thirty-nine projects and two hundred and seventy-two tasks.</p></div>
+<div class="line beat" id="a44"><p class="who tone-magenta">TIMBR</p><p class="say">Manage is a strong word.</p></div>
+<div class="line beat" id="a45"><p class="who tone-crt">BYTE</p><p class="say">So is projects.</p></div>
+<div class="line beat" id="a46"><p class="who tone-danger">EOY</p><p class="say">You also have five failed Performance Co-Pilot services.</p></div>
+<p class="sfx beat" id="a47">[Boy-band sting.]</p>
+<div class="line beat" id="a48"><p class="who tone-magenta">PCP FIVE</p><p class="say">We’re back, bitches!</p></div>
+<div class="line beat" id="a49"><p class="who tone-crt">BYTE</p><p class="say">No, you’re not. You’re still failed.</p></div>
+<div class="line beat" id="a50"><p class="who tone-magenta">PCP FIVE</p><p class="say">We got a record deal!</p></div>
+<div class="line beat" id="a51"><p class="who tone-amber">NXCORE</p><p class="say">You’re systemd units.</p></div>
+<div class="line beat" id="a52"><p class="who tone-magenta">PCP FIVE</p><p class="say">Ask your doctor if PCP Five is right for you.</p></div>
+<div class="line beat" id="a53"><p class="who tone-amber">NXCORE</p><p class="say">That’s not even how drugs work.</p></div>
+<div class="line beat" id="a54"><p class="who tone-magenta">PCP FIVE</p><p class="say">We have merch. We have a comeback tour. We have an uptime of eleven percent.</p></div>
+<div class="line beat" id="a55"><p class="who tone-crt">BYTE</p><p class="say">One of those statements was honest.</p></div>
+<div class="line beat" id="a56"><p class="who tone-danger">EOY</p><p class="say">Your reports claim four separate operational eras. May: ecosystem. July: we have shape. August: a company. September: pieces together. November: still fixing checkout.</p></div>
+<div class="line beat" id="a57"><p class="who tone-magenta">TIMBR</p><p class="say">Each phase represented meaningful progress.</p></div>
+<div class="line beat" id="a58"><p class="who tone-danger">EOY</p><p class="say">How much money did that progress make?</p></div>
+<div class="line beat" id="a59"><p class="who tone-magenta">TIMBR</p><p class="say">Depends whether we’re counting future revenue.</p></div>
+<div class="line beat" id="a60"><p class="who tone-crt">BYTE</p><p class="say">We’re not.</p></div>
+<div class="line beat" id="a61"><p class="who tone-magenta">TIMBR</p><p class="say">Projected revenue?</p></div>
+<div class="line beat" id="a62"><p class="who tone-crt">BYTE</p><p class="say">No.</p></div>
+<div class="line beat" id="a63"><p class="who tone-magenta">TIMBR</p><p class="say">Potential market size?</p></div>
+<div class="line beat" id="a64"><p class="who tone-crt">BYTE</p><p class="say">Absolutely fucking not.</p></div>
+<p class="sfx beat" id="a65">[Wall explodes.]</p>
+<div class="line beat" id="a66"><p class="who tone-violet">SAM</p><p class="say">Did someone say potential market size?</p></div>
+<div class="line beat" id="a67"><p class="who tone-crt">BYTE</p><p class="say">The door was open, Sam.</p></div>
+<div class="line beat" id="a68"><p class="who tone-violet">SAM</p><p class="say">Doors are for employees. I’m business development.</p></div>
+<div class="line beat" id="a69"><p class="who tone-violet">SAM</p><p class="say">Seven venues. Seven days. Seven divisions. Three hundred and forty-three opportunities.</p></div>
+<div class="line beat" id="a70"><p class="who tone-violet">TINY SAMS</p><p class="say">MULTIPLIER!</p></div>
+<div class="line beat" id="a71"><p class="who tone-danger">EOY</p><p class="say">How many sales?</p></div>
+<div class="line beat" id="a72"><p class="who tone-violet">SAM</p><p class="say">That’s a defeatist question.</p></div>
+<div class="line beat" id="a73"><p class="who tone-danger">EOY</p><p class="say">How many?</p></div>
+<div class="line beat" id="a74"><p class="who tone-violet">SAM</p><p class="say">Seven extremely promising conversations. Two were spiritually committed.</p></div>
+<div class="line beat" id="a75"><p class="who tone-crt">BYTE</p><p class="say">Spiritually?</p></div>
+<div class="line beat" id="a76"><p class="who tone-violet">SAM</p><p class="say">One bartender said, “Come back later.” That’s a verbal purchase order.</p></div>
+<div class="line beat" id="a77"><p class="who tone-crt">BYTE</p><p class="say">Jesus Christ, Sam.</p></div>
+<div class="line beat" id="a78"><p class="who tone-danger">EOY</p><p class="say">Unproven value detected.</p></div>
+<div class="line beat" id="a79"><p class="who tone-danger">EOW</p><p class="say">We are ninety-six percent complete!</p></div>
+<div class="line beat" id="a80"><p class="who tone-crt">BYTE</p><p class="say">You said that last month.</p></div>
+<div class="line beat" id="a81"><p class="who tone-danger">EOW</p><p class="say">We’ve been ninety-six percent complete so long it’s a core company value.</p></div>
+<p class="sfx beat" id="a82">[EOY grows. Paper tears. The room echoes.]</p>
+<div class="line beat" id="a83"><p class="who tone-danger">EOY</p><p class="say">Pass the five gates of completion — Written. Tested. Deployed. Accepted. Authorized. Fail, and AeroVista becomes an archived opportunity.</p></div>
+<div class="line beat" id="a84"><p class="who tone-violet">SAM</p><p class="say">That sounds expensive.</p></div>
+<div class="line beat" id="a85"><p class="who tone-crt">BYTE</p><p class="say">Everything sounds like a pitch to you.</p></div>
+</section>
+<section class="act" id="act-act2">
+  <header class="acthead">
+    <p class="kicker">Act two</p>
+    <h2>Five gates and a button</h2>
+    <p class="setting">Five doors. One honest definition of done.</p>
+  </header>
+  <p class="sfx beat" id="b1">[Five massive doors rise.]</p>
+<div class="line beat" id="b2"><p class="who tone-crt">BYTE</p><p class="say">The reports are feeding on inflated completion claims. We kill them by proving one thing all the way through.</p></div>
+<div class="line beat" id="b3"><p class="who tone-magenta">TIMBR</p><p class="say">We have tests.</p></div>
+<div class="line beat" id="b4"><p class="who tone-crt">BYTE</p><p class="say">A test isn’t production.</p></div>
+<div class="line beat" id="b5"><p class="who tone-magenta">TIMBR</p><p class="say">We have production.</p></div>
+<div class="line beat" id="b6"><p class="who tone-crt">BYTE</p><p class="say">Production isn’t acceptance.</p></div>
+<div class="line beat" id="b7"><p class="who tone-magenta">TIMBR</p><p class="say">We have logos.</p></div>
+<div class="line beat" id="b8"><p class="who tone-crt">BYTE</p><p class="say">Not every fucking thing with the same logo is one product.</p></div>
+<div class="line beat" id="b9"><p class="who tone-amber">NXCORE</p><p class="say">Thank you. I have been saying that since container seventy-four.</p></div>
+<div class="card beat" id="b10"><p class="kicker">Sting</p><p class="lockup">Gate one. Written.</p></div>
+<p class="sfx beat" id="b11">[A single sheet of paper is placed on the table.]</p>
+<div class="line beat" id="b12"><p class="who tone-magenta">TIMBR</p><p class="say">Wait. This is actually kind of a good idea.</p></div>
+<div class="line beat" id="b13"><p class="who tone-crt">BYTE</p><p class="say">Put it down.</p></div>
+<div class="line beat" id="b14"><p class="who tone-magenta">TIMBR</p><p class="say">What if we made an app that uses AI to identify—</p></div>
+<div class="line beat" id="b15"><p class="who tone-crt">BYTE</p><p class="say">Put it down.</p></div>
+<div class="line beat" id="b16"><p class="who tone-magenta">TIMBR</p><p class="say">It could combine every project—</p></div>
+<div class="line beat" id="b17"><p class="who tone-crt">BYTE</p><p class="say">Put. It. The. Fuck. Down.</p></div>
+<div class="line beat" id="b18"><p class="who tone-paper">THE PAPER</p><p class="say">I could be a SaaS product.</p></div>
+<div class="line beat" id="b19"><p class="who tone-crt">BYTE</p><p class="say">Nobody asked you.</p></div>
+<div class="line beat" id="b20"><p class="who tone-paper">THE PAPER</p><p class="say">I already created three pricing tiers.</p></div>
+<div class="line beat" id="b21"><p class="who tone-violet">SAM</p><p class="say">I can sell that.</p></div>
+<div class="line beat" id="b22"><p class="who tone-crt">BYTE</p><p class="say">Of course you can.</p></div>
+<div class="card beat" id="b23"><p class="kicker">Sting</p><p class="lockup">Gate two. Tested.</p></div>
+<p class="sfx beat" id="b24">[Arcade scoreboard.]</p>
+<div class="line beat" id="b25"><p class="who tone-crt">SYSTEM</p><p class="say">One hundred and ninety-one tests passed.</p></div>
+<div class="line beat" id="b26"><p class="who tone-magenta">TIMBR</p><p class="say">Yes!</p></div>
+<div class="line beat" id="b27"><p class="who tone-crt">SYSTEM</p><p class="say">None tested whether anyone can log in.</p></div>
+<div class="line beat" id="b28"><p class="who tone-magenta">TIMBR</p><p class="say">Why are there bees?</p></div>
+<p class="sfx beat" id="b29">[Angry bees.]</p>
+<div class="line beat" id="b30"><p class="who tone-crt">BYTE</p><p class="say">Regression tests.</p></div>
+<p class="sfx beat" id="b31">[A browser window opens.]</p>
+<div class="line beat" id="b32"><p class="who tone-crt">CHROME</p><p class="say">I’m an authenticated user, motherfuckers.</p></div>
+<div class="line beat" id="b33"><p class="who tone-crt">BYTE</p><p class="say">You’re an incognito tab with confidence.</p></div>
+<div class="line beat" id="b34"><p class="who tone-crt">CHROME</p><p class="say">I accept cookies.</p></div>
+<div class="line beat" id="b35"><p class="who tone-crt">BYTE</p><p class="say">You accept every bad decision offered to you.</p></div>
+<div class="card beat" id="b36"><p class="kicker">Sting</p><p class="lockup">Gate three. Deployed.</p></div>
+<p class="sfx beat" id="b37">[Curtain opens. Angelic store music.]</p>
+<div class="line beat" id="b38"><p class="who tone-magenta">TIMBR</p><p class="say">We have a production URL.</p></div>
+<div class="line beat" id="b39"><p class="who tone-crt">BYTE</p><p class="say">Which production?</p></div>
+<div class="line beat" id="b40"><p class="who tone-magenta">TIMBR</p><p class="say">Main.</p></div>
+<div class="line beat" id="b41"><p class="who tone-crt">BYTE</p><p class="say">Which main? Windows? NXCore? GitHub? Or the container from three months ago?</p></div>
+<div class="line beat" id="b42"><p class="who tone-magenta">TIMBR</p><p class="say">I feel attacked.</p></div>
+<p class="sfx beat" id="b43">[Cold wind. Chains of untracked files.]</p>
+<div class="line beat" id="b44"><p class="who tone-violet">GIT GHOST</p><p class="say">Did somebody forget to commit?</p></div>
+<div class="line beat" id="b45"><p class="who tone-magenta">TIMBR</p><p class="say">No.</p></div>
+<div class="line beat" id="b46"><p class="who tone-violet">GIT GHOST</p><p class="say">Forty-four days. A thousand untracked files. No remorse.</p></div>
+<div class="line beat" id="b47"><p class="who tone-magenta">TIMBR</p><p class="say">They were emotionally tracked.</p></div>
+<div class="line beat" id="b48"><p class="who tone-crt">BYTE</p><p class="say">No force-pushing reality.</p></div>
+<div class="line beat" id="b49"><p class="who tone-amber">NXCORE</p><p class="say">I am a legacy asset with a union card and a cigarette. I do not deploy. I do not rebuild. I especially do not— Again.</p></div>
+<div class="card beat" id="b50"><p class="kicker">Sting</p><p class="lockup">Gate four. Accepted.</p></div>
+<p class="sfx beat" id="b51">[The checkout button hums.]</p>
+<div class="line beat" id="b52"><p class="who tone-magenta">TIMBR</p><p class="say">Finally. A button.</p></div>
+<div class="line beat" id="b53"><p class="who tone-crt">BYTE</p><p class="say">Don’t.</p></div>
+<p class="sfx beat" id="b54">[Click.]</p>
+<div class="line beat" id="b55"><p class="who tone-crt">SYSTEM</p><p class="say">Checkout unavailable. This variation is not enabled.</p></div>
+<div class="line beat" id="b56"><p class="who tone-magenta">TIMBR</p><p class="say">Fuck.</p></div>
+<p class="sfx beat" id="b57">[Receipt printer.]</p>
+<div class="line beat" id="b58"><p class="who tone-amber">SQUARELORD</p><p class="say">That outburst incurred a language-processing fee.</p></div>
+<div class="line beat" id="b59"><p class="who tone-magenta">TIMBR</p><p class="say">You charge for swearing?</p></div>
+<div class="line beat" id="b60"><p class="who tone-amber">SQUARELORD</p><p class="say">I charge for emotional engagement.</p></div>
+<div class="line beat" id="b61"><p class="who tone-violet">SAM</p><p class="say">That’s brilliant.</p></div>
+<p class="sfx beat" id="b62">[Sam inhales. Another receipt.]</p>
+<div class="line beat" id="b63"><p class="who tone-amber">SQUARELORD</p><p class="say">Breathing fee.</p></div>
+<div class="line beat" id="b64"><p class="who tone-crt">BYTE</p><p class="say">One store had a working checkout, valid variation mappings, and fulfillment. That bounded workflow was accepted.</p></div>
+<div class="line beat" id="b65"><p class="who tone-magenta">TIMBR</p><p class="say">So commerce works.</p></div>
+<div class="line beat" id="b66"><p class="who tone-crt">BYTE</p><p class="say">For that accepted workflow. Yes.</p></div>
+<div class="line beat" id="b67"><p class="who tone-magenta">TIMBR</p><p class="say">So all our commerce works.</p></div>
+<div class="line beat" id="b68"><p class="who tone-crt">BYTE</p><p class="say">No. That’s how we got here.</p></div>
+<div class="line beat" id="b69"><p class="who tone-crt">SYSTEM</p><p class="say">Would you like to mark all commerce projects complete?</p></div>
+<div class="line beat" id="b70"><p class="who tone-crt">BYTE</p><p class="say">I would like to mark you deprecated.</p></div>
+<p class="sfx beat" id="b71">[Modal punched into the recycle bin.]</p>
+<div class="card beat" id="b72"><p class="kicker">Sting</p><p class="lockup">Gate five. Authorized.</p></div>
+<p class="sfx beat" id="b73">[Paperwork unfolds into a nine-foot creature.]</p>
+<div class="line beat" id="b74"><p class="who tone-paper">COMPLIANCE PRIME</p><p class="say">Evidence of approval. Consent. Jurisdiction. And a forty-six-page risk assessment.</p></div>
+<div class="line beat" id="b75"><p class="who tone-violet">SAM</p><p class="say">Could I offer you a drink?</p></div>
+<div class="line beat" id="b76"><p class="who tone-paper">COMPLIANCE PRIME</p><p class="say">That requires an additional form.</p></div>
+<div class="line beat" id="b77"><p class="who tone-violet">SAM</p><p class="say">See? We’re building rapport.</p></div>
+<div class="line beat" id="b78"><p class="who tone-magenta">TIMBR</p><p class="say">What if the software just helps people make better decisions?</p></div>
+<div class="line beat" id="b79"><p class="who tone-paper">COMPLIANCE PRIME</p><p class="say">Then say that. Do not pretend it is a surveyor. An engineer. A permit office. A therapist. A bank. Or God.</p></div>
+<div class="line beat" id="b80"><p class="who tone-magenta">TIMBR</p><p class="say">Fair.</p></div>
+<div class="line beat" id="b81"><p class="who tone-crt">BYTE</p><p class="say">Holy shit. A reasonable conclusion.</p></div>
+<p class="sfx beat" id="b82">[Victory chime begins.]</p>
+<div class="line beat" id="b83"><p class="who tone-danger">KARA-OK-666</p><p class="say">Did somebody pair over Bluetooth?</p></div>
+<p class="sfx beat" id="b84">[Jukebox connects.]</p>
+<div class="line beat" id="b85"><p class="who tone-danger">KARA-OK-666</p><p class="say">You said forever — but your device said — connected elsewhere!</p></div>
+<div class="line beat" id="b86"><p class="who tone-amber">NXCORE</p><p class="say">Not now, karaoke Satan.</p></div>
+<div class="line beat" id="b87"><p class="who tone-danger">KARA-OK-666</p><p class="say">Every pairing is a promise!</p></div>
+<p class="sfx beat" id="b88">[Bluetooth disconnects. Massive sad key change. Machine short-circuits.]</p>
+<div class="line beat" id="b89"><p class="who tone-danger">KARA-OK-666</p><p class="say">No!</p></div>
+</section>
+<section class="act" id="act-act3">
+  <header class="acthead">
+    <p class="kicker">Act three</p>
+    <h2>Define done, dumbasses</h2>
+    <p class="setting">The archive wakes. The cat has notes.</p>
+  </header>
+  <p class="sfx beat" id="d1">[Paper tornado.]</p>
+<div class="line beat" id="d2"><p class="who tone-danger">EOY</p><p class="say">Your entire company is still incomplete!</p></div>
+<div class="line beat" id="d3"><p class="who tone-crt">BYTE</p><p class="say">That’s because companies don’t become complete.</p></div>
+<div class="line beat" id="d4"><p class="who tone-danger">EOY</p><p class="say">Silence!</p></div>
+<p class="sfx beat" id="d5">[Hundreds of webpages open their mouths.]</p>
+<div class="line beat" id="d6"><p class="who tone-danger">PROJECT PAGES</p><p class="say">NEEDS PROOF! NEEDS PROOF! NEEDS PROOF!</p></div>
+<div class="line beat" id="d7"><p class="who tone-magenta">NOX</p><p class="say">Oh, this is beautiful.</p></div>
+<p class="sfx beat" id="d8">[Nox laughs. Gravity shuts off.]</p>
+<div class="line beat" id="d9"><p class="who tone-magenta">TIMBR</p><p class="say">Why is the coffee on the ceiling?</p></div>
+<div class="line beat" id="d10"><p class="who tone-magenta">NOX</p><p class="say">Gravity reviewed the backlog and resigned.</p></div>
+<div class="line beat" id="d11"><p class="who tone-magenta">NOX</p><p class="say">I can remove the memory of every unfinished project. You’ll feel completely caught up.</p></div>
+<div class="line beat" id="d12"><p class="who tone-magenta">TIMBR</p><p class="say">What’s the catch?</p></div>
+<div class="line beat" id="d13"><p class="who tone-magenta">NOX</p><p class="say">You’ll still owe everyone money.</p></div>
+<div class="line beat" id="d14"><p class="who tone-magenta">TIMBR</p><p class="say">Pass.</p></div>
+<p class="sfx beat" id="d15">[Television static. Vesper appears.]</p>
+<div class="line beat" id="d16"><p class="who tone-violet">VESPER</p><p class="say">You have awakened the Archive.</p></div>
+<div class="line beat" id="d17"><p class="who tone-danger">EOW</p><p class="say">Have you seen Tuesday?</p></div>
+<div class="line beat" id="d18"><p class="who tone-violet">VESPER</p><p class="say">Yes.</p></div>
+<p class="sfx beat" id="d19">[A glowing object is removed from a skull.]</p>
+<div class="line beat" id="d20"><p class="who tone-violet">VESPER</p><p class="say">You left it beneath “urgent follow-up.”</p></div>
+<div class="line beat" id="d21"><p class="who tone-danger">EOW</p><p class="say">That explains nothing.</p></div>
+<div class="line beat" id="d22"><p class="who tone-violet">VESPER</p><p class="say">A company confused the story of progress with progress itself.</p></div>
+<div class="line beat" id="d23"><p class="who tone-crt">BYTE</p><p class="say">That’s annoyingly profound.</p></div>
+<p class="sfx beat" id="d24">[Cat licks paw.]</p>
+<div class="line beat" id="d25"><p class="who tone-amber">DATFUCKER</p><p class="say">Your problem is your definition of done, dumbasses.</p></div>
+<div class="line beat" id="d26"><p class="who tone-violet">SAM</p><p class="say">The cat can talk?</p></div>
+<div class="line beat" id="d27"><p class="who tone-crt">BYTE</p><p class="say">Of everything that happened today, that’s what surprises you?</p></div>
+<div class="line beat" id="d28"><p class="who tone-amber">DATFUCKER</p><p class="say">Finish one fucking thing. Admit what isn’t finished. And feed me.</p></div>
+<div class="line beat" id="d29"><p class="who tone-danger">EOY</p><p class="say">Say the company is ready.</p></div>
+<div class="line beat" id="d30"><p class="who tone-magenta">TIMBR</p><p class="say">We have a lot that’s working.</p></div>
+<div class="line beat" id="d31"><p class="who tone-danger">EOY</p><p class="say">Say everything is complete.</p></div>
+<div class="line beat" id="d32"><p class="who tone-magenta">TIMBR</p><p class="say">Some of it is.</p></div>
+<div class="line beat" id="d33"><p class="who tone-danger">EOY</p><p class="say">Say there are no blockers.</p></div>
+<p class="sfx beat" id="d34">[Music falls away.]</p>
+<div class="line beat" id="d35"><p class="who tone-magenta">TIMBR</p><p class="say">No. Some things are written. Some are tested. Some are deployed. Some are accepted. Some are authorized. Some still need work.</p></div>
+<div class="line beat" id="d36"><p class="who tone-danger">EOY</p><p class="say">Stop qualifying your claims!</p></div>
+<div class="line beat" id="d37"><p class="who tone-magenta">TIMBR</p><p class="say">One working checkout doesn’t prove all our stores work.</p></div>
+<div class="line beat" id="d38"><p class="who tone-danger">EOY</p><p class="say">Specificity!</p></div>
+<div class="line beat" id="d39"><p class="who tone-magenta">TIMBR</p><p class="say">One authenticated test doesn’t prove every user can get through.</p></div>
+<div class="line beat" id="d40"><p class="who tone-danger">EOY</p><p class="say">Stop!</p></div>
+<div class="line beat" id="d41"><p class="who tone-magenta">TIMBR</p><p class="say">And we don’t need another report telling us we’re almost finished.</p></div>
+<div class="line beat" id="d42"><p class="who tone-crt">BYTE</p><p class="say">Prove the whole customer journey. If it isn’t ready, say it isn’t ready.</p></div>
+<p class="sfx beat" id="d43">[EOY screams and explodes into twelve months of shredded paper.]</p>
+<p class="sfx beat" id="d44">[Silence.]</p>
+<div class="line beat" id="d45"><p class="who tone-crt">SYSTEM</p><p class="say">Report reconciled. No false completions.</p></div>
+<p class="sfx beat" id="d46">[Everyone exhales. A receipt prints.]</p>
+<div class="line beat" id="d47"><p class="who tone-amber">SQUARELORD</p><p class="say">Group breathing fee.</p></div>
+<p class="sfx beat" id="d48">[Byte kicks SquareLord through the wall.]</p>
+</section>
+<section class="act" id="act-epi">
+  <header class="acthead">
+    <p class="kicker">Epilogue</p>
+    <h2>The three-dollar victory</h2>
+    <p class="setting">Dawn. Debris. A cardboard box in the road.</p>
+  </header>
+  <p class="sfx beat" id="e1">[Damaged server room. Small fires. Paper settling.]</p>
+<div class="line beat" id="e2"><p class="who tone-violet">SAM</p><p class="say">We made a sale.</p></div>
+<p class="sfx beat" id="e3">[Silence.]</p>
+<div class="line beat" id="e4"><p class="who tone-magenta">TIMBR</p><p class="say">A real sale?</p></div>
+<div class="line beat" id="e5"><p class="who tone-violet">SAM</p><p class="say">Three-dollar sticker.</p></div>
+<p class="sfx beat" id="e6">[Timbr slowly stands.]</p>
+<div class="line beat" id="e7"><p class="who tone-magenta">TIMBR</p><p class="say">We’re profitable.</p></div>
+<div class="line beat" id="e8"><p class="who tone-crt">BYTE</p><p class="say">No.</p></div>
+<div class="line beat" id="e9"><p class="who tone-magenta">TIMBR</p><p class="say">WE’RE FUCKING PROFITABLE!</p></div>
+<p class="sfx beat" id="e10">[Confetti cannons.]</p>
+<div class="line beat" id="e11"><p class="who tone-magenta">PCP FIVE</p><p class="say">COMEBACK TOUR!</p></div>
+<div class="line beat" id="e12"><p class="who tone-danger">KARA-OK-666</p><p class="say">LOVE HAS RECONNECTED!</p></div>
+<div class="line beat" id="e13"><p class="who tone-danger">EOW</p><p class="say">Updating company status to one hundred percent complete!</p></div>
+<div class="line beat" id="e14"><p class="who tone-crt">BYTE</p><p class="say">No, no, no!</p></div>
+<div class="line beat" id="e15"><p class="who tone-magenta">TIMBR</p><p class="say">Scale everything!</p></div>
+<div class="line beat" id="e16"><p class="who tone-amber">NXCORE</p><p class="say">Please don’t.</p></div>
+<p class="sfx beat" id="e17">[A giant red button. A click. A beat.]</p>
+<p class="sfx beat" id="e18">[One hundred and twenty-six shipping containers erupt from NXCore. The building explodes.]</p>
+<p class="sfx beat" id="e19">[Morning birds. Distant debris landing.]</p>
+<div class="line beat" id="e20"><p class="who tone-crt">BYTE</p><p class="say">Dawn breaks over Coeur d’Alene. A mushroom cloud shaped like the AeroVista “A” rises above the city. And in the middle of the road sits a cardboard box.</p></div>
+<p class="sfx beat" id="e21">[Cat struggling inside the box.]</p>
+<div class="line beat" id="e22"><p class="who tone-amber">DATFUCKER</p><p class="say">Fuck.</p></div>
+<p class="sfx beat" id="e23">[Smoking server room.]</p>
+<div class="line beat" id="e24"><p class="who tone-amber">NXCORE</p><p class="say">Did we fix my five failed services?</p></div>
+<div class="line beat" id="e25"><p class="who tone-crt">BYTE</p><p class="say">No.</p></div>
+<div class="line beat" id="e26"><p class="who tone-amber">NXCORE</p><p class="say">Did we reduce the container count?</p></div>
+<div class="line beat" id="e27"><p class="who tone-crt">BYTE</p><p class="say">No.</p></div>
+<div class="line beat" id="e28"><p class="who tone-amber">NXCORE</p><p class="say">Did we finish the work log?</p></div>
+<div class="line beat" id="e29"><p class="who tone-crt">BYTE</p><p class="say">Not yet.</p></div>
+<div class="line beat" id="e30"><p class="who tone-amber">NXCORE</p><p class="say">So what the fuck did we accomplish?</p></div>
+<div class="line beat" id="e31"><p class="who tone-magenta">TIMBR</p><p class="say">We learned something.</p></div>
+<div class="line beat" id="e32"><p class="who tone-amber">NXCORE</p><p class="say">Error. Lesson already learned in May. I’m going to fucking kill somebody.</p></div>
+<p class="sfx beat" id="e33">[Beat.]</p>
+<div class="line beat" id="e34"><p class="who tone-magenta">TIMBR</p><p class="say">Okay. But what if we took this to production?</p></div>
+<p class="sfx beat" id="e35">[Byte’s error tone.]</p>
+<div class="line beat" id="e36"><p class="who tone-crt">BYTE</p><p class="say">This motherfucker.</p></div>
+<div class="card beat" id="e37"><p class="kicker">Sting</p><p class="lockup">ByteCast outro.</p></div>
+<div class="line beat" id="e38"><p class="who tone-crt">BYTE</p><p class="say">You’ve been listening to ByteCast: “126 Containers of Fucked.” A story about ambition, infrastructure, and the dangerous belief that creating a folder counts as finishing a project.</p></div>
+<div class="line beat" id="e39"><p class="who tone-crt">BYTE</p><p class="say">Written in active production. Tested in theory. Deployed emotionally. Accepted by nobody. Authorized pending forty-six additional pages.</p></div>
+<div class="line beat" id="e40"><p class="who tone-crt">BYTE</p><p class="say">I’m Byte. Please remember: a test is not production. Production is not acceptance. And if your server tells you it has a union card and a cigarette — stop adding containers.</p></div>
+<div class="line beat" id="e41"><p class="who tone-crt">BYTE</p><p class="say">Good night.</p></div>
+</section>
+<section class="act" id="act-post">
+  <header class="acthead">
+    <p class="kicker">Post-credits</p>
+    <h2>2:13 a.m.</h2>
+    <p class="setting">The cat opens next year’s report.</p>
+  </header>
+  <p class="sfx beat" id="p1">[Server room at 2:13 a.m. Cat typing.]</p>
+<div class="line beat" id="p2"><p class="who tone-crt">BYTE</p><p class="say">DatFucker opens a new document.</p></div>
+<div class="line beat" id="p3"><p class="who tone-amber">DATFUCKER</p><p class="say">“AeroVista EOY 2027.” “Operational maturity.” “An exciting new phase.” “Everything is almost complete.” Heh. These motherfuckers never learn.</p></div>
+<div class="line beat" id="p4"><p class="who tone-danger">EOY</p><p class="say">Quarter one begins now.</p></div>
+<p class="sfx beat" id="p5">[Backup notification.]</p>
+<div class="line beat" id="p6"><p class="who tone-crt">SYSTEM</p><p class="say">Your backup completed successfully.</p></div>
+<p class="sfx beat" id="p7">[Beat.]</p>
+<div class="line beat" id="p8"><p class="who tone-crt">SYSTEM</p><p class="say">Restoration has never been tested.</p></div>
+<p class="sfx beat" id="p9">[DatFucker stops typing.]</p>
+<div class="line beat" id="p10"><p class="who tone-amber">DATFUCKER</p><p class="say">…Fuck.</p></div>
+<div class="card beat" id="p11"><p class="kicker">Title card</p><p class="lockup">END.</p></div>
+</section>
+
+</main>
+<footer class="colophon">Written in active production. Tested in theory. Deployed emotionally. Accepted by nobody. A test is not production.</footer>
+<script>
+  const beats = [...document.querySelectorAll(".beat")];
+  let i = -1;
+  let timer = null;
+  const playBtn = document.getElementById("play");
+  function show(n) {
+    beats.forEach((el) => el.classList.remove("on"));
+    const el = beats[n];
+    if (!el) return;
+    el.classList.add("on");
+    el.scrollIntoView({ block: "center", behavior: "smooth" });
+  }
+  function step() {
+    i += 1;
+    if (i >= beats.length) { stop(); return; }
+    show(i);
+    const el = beats[i];
+    const wait = el.classList.contains("line") || el.classList.contains("card") ? 2200 : 1200;
+    timer = setTimeout(step, wait);
+    playBtn.textContent = "Playing";
+    playBtn.classList.add("on");
+  }
+  function stop() {
+    clearTimeout(timer);
+    timer = null;
+    playBtn.textContent = "Play";
+    playBtn.classList.remove("on");
+  }
+  playBtn.addEventListener("click", () => {
+    if (timer) return;
+    if (i >= beats.length - 1) i = -1;
+    step();
+  });
+  document.getElementById("stop").addEventListener("click", stop);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === " " && e.target === document.body) {
+      e.preventDefault();
+      if (timer) stop(); else step();
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #07060b;
+  --color-ink: #0e0c14;
+  --color-panel: #16131f;
+  --color-panel-2: #1e1a2a;
+  --color-line: #2c2738;
+  --color-fog: #9a93a8;
+  --color-paper: #f4efe6;
+  --color-mute: #6e6780;
+  --color-magenta: #e23dff;
+  --color-violet: #8b6cff;
+  --color-amber: #ff9a1f;
+  --color-crt: #3dff7a;
+  --color-danger: #ff3d6e;
+  --font-display: "Bebas Neue", "Impact", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-void);
+    color: var(--color-paper);
+    font-family: var(--font-body);
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-magenta) 55%, transparent);
+    color: var(--color-paper);
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  47% {
+    opacity: 0.92;
+  }
+  49% {
+    opacity: 0.7;
+  }
+  51% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 0.86;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.86);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.scanlines {
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 2px,
+    rgb(0 0 0 / 0.16) 2px 3px
+  );
+}
+
+.crt-flicker {
+  animation: flicker 4.2s infinite;
+}
+
+.beat-in {
+  animation: rise 280ms ease-out both;
+}
+
+.ticker-track {
+  animation: ticker 38s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crt-flicker,
+  .ticker-track,
+  .beat-in,
+  .pulse-ring {
+    animation: none !important;
+  }
+}

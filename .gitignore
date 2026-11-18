@@ -22,3 +22,10 @@ artifacts/
 *.sqlite3
 *.db
 .DS_Store
+
+# Oversized originals belonging to the preserved NXCore /126 snapshot.
+/126/public/scenes/e02-cut.mp4
+/126/public/scenes/e03-cut.mp4
+/126/public/scenes/e04-cut.mp4
+/126/public/scenes/e05-cut.mp4
+/126/public/scenes/eoy-cut.mp4
