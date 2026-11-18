@@ -3,12 +3,13 @@ import { BEATS } from "@/lib/episode";
 import { EPISODE_02 } from "@/lib/episode-02";
 import { BibleView } from "@/components/bible-view";
 import { Player } from "@/components/player";
+import { EpisodeLibrary } from "@/components/episode-library";
 import { ScenesView } from "@/components/scenes-view";
 
-type View = "bible" | "scenes" | "e02" | "pilot";
+type View = "episodes" | "bible" | "scenes" | "e02" | "pilot";
 
 export function LateShift() {
-  const [view, setView] = useState<View>("e02");
+  const [view, setView] = useState<View>("episodes");
 
   return (
     <main className="min-h-dvh bg-bg text-ink">
@@ -25,6 +26,7 @@ export function LateShift() {
           <div className="flex flex-wrap gap-2">
             {(
               [
+                ["episodes", "Episodes"],
                 ["bible", "Bible"],
                 ["scenes", "Scenes"],
                 ["e02", "Ep 02"],
@@ -45,7 +47,9 @@ export function LateShift() {
           </div>
         </header>
 
-        {view === "bible" ? (
+        {view === "episodes" ? (
+          <EpisodeLibrary onPlay={setView} />
+        ) : view === "bible" ? (
           <BibleView />
         ) : view === "scenes" ? (
           <ScenesView />
