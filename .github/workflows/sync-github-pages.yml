@@ -1,0 +1,41 @@
+name: Publish the two static Pages editions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/sync-github-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: static-pages-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the current source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Copy docs folder into gh-pages branch
+        run: |
+          set -euo pipefail
+          git fetch origin gh-pages
+          git worktree add --detach "$RUNNER_TEMP/pages" origin/gh-pages
+          rsync -a --delete --exclude='.git/' docs/ "$RUNNER_TEMP/pages/"
+          cd "$RUNNER_TEMP/pages"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'Static site unchanged'
+            exit 0
+          fi
+          git commit -m "Sync static Pages editions from main $GITHUB_SHA"
+          git push origin HEAD:gh-pages
