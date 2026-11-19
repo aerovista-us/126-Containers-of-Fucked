@@ -44,6 +44,12 @@ export function LateShift() {
                 {label}
               </button>
             ))}
+            <a
+              href="/episode-06"
+              className="inline-flex min-h-11 items-center border border-mag px-3 font-mono text-xs tracking-widest text-mag uppercase hover:bg-mag hover:text-bg"
+            >
+              Ep 06 art + audio
+            </a>
           </div>
         </header>
 

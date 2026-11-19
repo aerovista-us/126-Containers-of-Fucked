@@ -1,0 +1,113 @@
+{
+  "audio_source": "artifacts/voices/One Yellow Sticky Note.mp3",
+  "images": [
+    {
+      "slug": "teaser",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_53 AM-1.png",
+      "asset": "public/episode-06/images/teaser.webp",
+      "size_bytes": 409484
+    },
+    {
+      "slug": "archive",
+      "original": "Neon Archive of Unfinished Genius-1.png",
+      "asset": "public/episode-06/images/archive.webp",
+      "size_bytes": 277090
+    },
+    {
+      "slug": "showroom",
+      "original": "Neon Bunny Takes Over the Command Room-2.png",
+      "asset": "public/episode-06/images/showroom.webp",
+      "size_bytes": 267274
+    },
+    {
+      "slug": "merger",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_54 AM-3.png",
+      "asset": "public/episode-06/images/merger.webp",
+      "size_bytes": 534916
+    },
+    {
+      "slug": "tribunal",
+      "original": "Neon Rabbit Tribunal Showdown-4.png",
+      "asset": "public/episode-06/images/tribunal.webp",
+      "size_bytes": 248914
+    },
+    {
+      "slug": "factory",
+      "original": "Neon Bunny Product Factory-2.png",
+      "asset": "public/episode-06/images/factory.webp",
+      "size_bytes": 197466
+    },
+    {
+      "slug": "karaoke",
+      "original": "Neon Bunny Karaoke Takeover-3.png",
+      "asset": "public/episode-06/images/karaoke.webp",
+      "size_bytes": 284506
+    },
+    {
+      "slug": "paywall",
+      "original": "The Bunny\u2019s Digital Dominion-5.png",
+      "asset": "public/episode-06/images/paywall.webp",
+      "size_bytes": 277020
+    },
+    {
+      "slug": "offer",
+      "original": "Bunny\u2019s Neon Digital Throne-6.png",
+      "asset": "public/episode-06/images/offer.webp",
+      "size_bytes": 269728
+    },
+    {
+      "slug": "rescue",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_55 AM-4.png",
+      "asset": "public/episode-06/images/rescue.webp",
+      "size_bytes": 534678
+    },
+    {
+      "slug": "gates",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_57 AM-7.png",
+      "asset": "public/episode-06/images/gates.webp",
+      "size_bytes": 497830
+    },
+    {
+      "slug": "acceptance",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_57 AM-8.png",
+      "asset": "public/episode-06/images/acceptance.webp",
+      "size_bytes": 349750
+    },
+    {
+      "slug": "aftermath",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_54 AM-2.png",
+      "asset": "public/episode-06/images/aftermath.webp",
+      "size_bytes": 430978
+    },
+    {
+      "slug": "learns-nothing",
+      "original": "The $29.99 Rabbit Hole-1.png",
+      "asset": "public/episode-06/images/learns-nothing.webp",
+      "size_bytes": 269164
+    },
+    {
+      "slug": "container-127",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_59 AM-10.png",
+      "asset": "public/episode-06/images/container-127.webp",
+      "size_bytes": 303234
+    },
+    {
+      "slug": "container-127-alt",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_58 AM-9.png",
+      "asset": "public/episode-06/images/container-127-alt.webp",
+      "size_bytes": 264966
+    },
+    {
+      "slug": "factory-alt",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_56 AM-6.png",
+      "asset": "public/episode-06/images/factory-alt.webp",
+      "size_bytes": 281720
+    },
+    {
+      "slug": "bunny-intro",
+      "original": "ChatGPT Image Nov 18, 2026, 03_36_55 AM-5.png",
+      "asset": "public/episode-06/images/bunny-intro.webp",
+      "size_bytes": 381312
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 /** Editorial registry: status reflects available website material, not a claim of published video. */
-export type EpisodeStatus = "playable" | "media-archived" | "script-draft" | "concept";
+export type EpisodeStatus = "playable" | "media-archived" | "script-draft" | "visual-preview" | "concept";
 export type Episode = {
   id: string;
   number: string;
@@ -10,6 +10,7 @@ export type Episode = {
   image: string;
   playable?: "pilot" | "e02";
   scriptUrl?: string;
+  productionUrl?: string;
   mediaNote?: string;
 };
 
@@ -67,24 +68,26 @@ export const EPISODES: Episode[] = [
     id: "e05",
     number: "05",
     title: "The Bunny, the BytePad & the $29.99 Multiverse",
-    subtitle: "Creative development",
+    subtitle: "Superseded development concept · folded into EP06",
     synopsis:
-      "A suspiciously marketable bunny threatens to turn an innocent checkout into a multiverse-sized problem. Related screenplay work exists outside this site's canonical source.",
+      "An earlier Bunny/BytePad treatment that evolved into Episode 06. Retained as a concept, not a second released Bunny episode.",
     status: "concept",
     image: "/cartoon/button.jpg",
     mediaNote:
-      "No verified Episode 05 script or cut is included in this repository. Working titles and numbering may change.",
+      "The expanded Bunny antagonist story is Episode 06. This legacy concept remains in the catalog for continuity, not as a completed release.",
   },
   {
     id: "e06",
     number: "06",
     title: "The $29.99 Rabbit Hole",
-    subtitle: "Creative development",
+    subtitle: "Scene storyboard + original audio",
     synopsis:
-      "The bunny's escalating villain arc has been discussed for a later installment. Its final production assets are not yet in the site repository.",
-    status: "concept",
-    image: "/cartoon/vesper.jpg",
-    mediaNote: "Concept entry only; not a released or verified complete episode.",
+      "A neon sales-bunny turns unfinished ideas into a subscription nightmare. Explore fifteen visual story beats and hear One Yellow Sticky Note while the final film is in production.",
+    status: "visual-preview",
+    image: "/episode-06/images/learns-nothing.webp",
+    productionUrl: "/episode-06",
+    mediaNote:
+      "Scene concept art, one complete standalone track, and a directed cue sheet are wired. This is not a completed or fully voiced Episode 06 film.",
   },
 ];
 

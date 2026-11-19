@@ -5,6 +5,7 @@ const STATUS: Record<EpisodeStatus, { title: string; className: string }> = {
   playable: { title: "PLAYABLE NOW", className: "text-acid" },
   "media-archived": { title: "MEDIA ARCHIVED", className: "text-amber" },
   "script-draft": { title: "SCRIPT DRAFT", className: "text-amber" },
+  "visual-preview": { title: "VISUAL + AUDIO PREVIEW", className: "text-mag" },
   concept: { title: "IN DEVELOPMENT", className: "text-muted" },
 };
 
@@ -44,6 +45,14 @@ function EpisodeCard({
             >
               Play episode
             </button>
+          )}
+          {episode.productionUrl && (
+            <a
+              className="inline-flex min-h-11 items-center bg-mag px-4 font-mono text-xs font-bold tracking-wider text-bg uppercase"
+              href={episode.productionUrl}
+            >
+              Explore EP06 art + audio
+            </a>
           )}
           {episode.scriptUrl && (
             <a
