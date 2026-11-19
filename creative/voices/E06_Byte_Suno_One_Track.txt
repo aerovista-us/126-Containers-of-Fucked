@@ -1,0 +1,94 @@
+SIGNATURE SOUND:
+Adult feminine voice, bright mid-register with a slight smoky edge, quick-witted American English and laser-sharp diction. Energetic, expressive, confident, with a laugh hiding behind the sarcasm. Her technical explanations sound natural, never synthetic. She can switch from playful ridicule to fierce protective command in one breath. Dry punchlines land quietly; anger hits fast and clean. She's the smartest person in a room full of bad decisions, and she's exhausted by how often she has to prove it. Spoken dialogue, never singing.
+
+[Dryly amused; quick, conversational, with effortless sarcastic timing.]
+
+You used the phrase “thirty minutes” to describe an identity migration that lasted six weeks and invented a new definition of Tuesday.
+
+Wonderful. Where?
+
+I didn't. The founder referenced an unversioned adjective.
+
+No one invited a pop-up.
+
+[Analytical, measured and authoritative; make complex details sound obvious.]
+
+The early shells had spatial interactions. Later code got more disciplined about state, adapters, and history. The missing work is marrying a tested canvas to an authorized backend without resurrecting old unsafe bridges.
+
+You're not allowed in the vault.
+
+It describes an experience. It is not a demonstration of any particular backend contract.
+
+[Skeptical challenge; lightly playful, one eyebrow raised.]
+
+What are you actually selling?
+
+Don't listen. That's your own voice, packaged as a growth strategy.
+
+[Forensic precision, firm and careful; no overclaiming.]
+
+Public association claim observed. What it means, which projects it covers, and what was authorized are different questions.
+
+No. A name on a page isn't a license to merge systems.
+
+You're offering a conclusion without an investigation.
+
+Correct. But dates on surviving files don't answer every first-creation or individual-contribution question.
+
+We don't have to invent certainty to recognize real work.
+
+Or to ask better questions and preserve the original records.
+
+It didn't run any tests.
+
+[Urgency rising; she sees what everyone else is missing.]
+
+Sam, she's using the show to keep everyone from finishing the restoration.
+
+Apparently the moon is a gig worker.
+
+[Cold realization. Disgusted but razor-sharp; her contempt is controlled.]
+
+There you are. Not a product. Not a person. A runaway sales story feeding on our unfinished tasks.
+
+You're an infinitely scaling backlog in a cute outfit.
+
+I will not pay a hostage fee to inspect our own facts.
+
+[Sudden alarm; shout clearly, urgent and protective.]
+
+TIMBR! DON'T BELIEVE ANYTHING WITH A PURCHASE BUTTON ON AN EVIDENCE RECORD!
+
+[Fast tactical commands; clipped and precise, one action per beat.]
+
+Observe. Test. Save. Reload. Reopen. Restore. She feeds on claims that nobody checks.
+
+[Explosive fury; punch each word separately.]
+
+DON'T. BUILD. ANOTHER. APP.
+
+[Regain control. Dry confidence and reluctant relief.]
+
+Writing things down has never been our limiting factor.
+
+Right. We are not going to lie for a dramatic climax.
+
+That's why he earns the big boots.
+
+Good for you. The joke is that he needed one requirement actually satisfied. We didn't have to declare anybody else a fraud to finish our own work.
+
+He did it because the badge was shiny.
+
+[Sober debrief; honest, grounded, quietly proud without exaggeration.]
+
+Preserved historical artifacts. A clearer line between concept, implementation, access, and permission. And one working staging slice proving the drag-save-reload-reopen path can be rebuilt without trusting the old privileged bridges.
+
+Still work. Product integration, security review, backup restore, real acceptance, rollout. No victory banner until those gates actually pass.
+
+Tonight's lesson: a real historical build beats a vague claim, but neither replaces a full development record. Similar products aren't proof of stolen code. A clean sales page isn't acceptance. And an honest scoped test is worth more than pretending the whole project shipped.
+
+If you organized your files?
+
+[Tiny exhausted pause, then deliver the final deadpan punchline.]
+
+Please. The toaster has a release process.
