@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight, Clapperboard, FileDown, Headphones, Images, ArrowLeft } from "lucide-react";
 import { EPISODE_06_SCENES } from "@/lib/episode-06";
+import { Episode06MediaLibrary } from "@/components/episode-06-media-library";
 
 export function Episode06Production() {
   const [selected, setSelected] = useState(0);
@@ -157,6 +158,8 @@ export function Episode06Production() {
             ))}
           </ol>
         </section>
+
+        <Episode06MediaLibrary />
 
         <section className="mt-10 grid gap-5 border-t border-line pt-8 md:grid-cols-2">
           <div className="border border-line p-5">

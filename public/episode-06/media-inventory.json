@@ -1,0 +1,764 @@
+{
+  "edition": "Episode 06 media sync",
+  "inventory_date": "2026-11-20",
+  "policy": "Originals remain unchanged on NXCore. Optimized WebP derivatives and selected MP3s published. Videos tracked by path but retained in external media storage, not source Git.",
+  "images": [
+    {
+      "source": "artifacts/imagine_images/Byte Shatters the Bunny Paywall-11.png",
+      "source_bytes": 2593871,
+      "sha256": "ba8bf9c62e10a72b5d09ba4a4d66b0d335476774871bcf67d718b104372858c2",
+      "public_path": "/episode-06/gallery/byte-shatters-the-bunny-paywall-11.webp",
+      "public_bytes": 186800,
+      "title": "Byte Shatters the Bunny Paywall",
+      "group": "Bunny — human-style alternates",
+      "filename": "Byte Shatters the Bunny Paywall-11.png"
+    },
+    {
+      "source": "artifacts/imagine_images/Cyberpunk Bunny Protocol Override-12.png",
+      "source_bytes": 2315033,
+      "sha256": "01e801268f6430348b05571a2e0d88f5bce117b3541952596c277b0def47577c",
+      "public_path": "/episode-06/gallery/cyberpunk-bunny-protocol-override-12.webp",
+      "public_bytes": 161662,
+      "title": "Cyberpunk Bunny Protocol Override",
+      "group": "Bunny — human-style alternates",
+      "filename": "Cyberpunk Bunny Protocol Override-12.png"
+    },
+    {
+      "source": "artifacts/imagine_images/Cyberpunk Byte_ Deception.exe Purging-10.png",
+      "source_bytes": 2352513,
+      "sha256": "a7f25492bb1248b3212f06d3618167302a09355d5604f7dd8bb6030125653ca9",
+      "public_path": "/episode-06/gallery/cyberpunk-byte-deception-exe-purging-10.webp",
+      "public_bytes": 157282,
+      "title": "Cyberpunk Byte  Deception.exe Purging",
+      "group": "Byte",
+      "filename": "Cyberpunk Byte_ Deception.exe Purging-10.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Buy Portal-3.png",
+      "source_bytes": 2473741,
+      "sha256": "cd0f8c7f3c2ef3f7da88b2010e0f229032ca70199cefcb68f7e3fa07af46e2fc",
+      "public_path": "/episode-06/gallery/human-neon-bunny-buy-portal-3.webp",
+      "public_bytes": 151298,
+      "title": "Neon Bunny Buy Portal",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Buy Portal-3.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Cyber Upgrade Interface-8.png",
+      "source_bytes": 2491265,
+      "sha256": "23786ce7cf47741a10a1fb7a70f257970c736c8cbb892f65066116d0dceb4e8c",
+      "public_path": "/episode-06/gallery/human-neon-bunny-cyber-upgrade-interface-8.webp",
+      "public_bytes": 174570,
+      "title": "Neon Bunny Cyber Upgrade Interface",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Cyber Upgrade Interface-8.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Cyberpunk Hacker Diva-26.png",
+      "source_bytes": 2671949,
+      "sha256": "e657eba5822095b15b299a02f48ad94aabcd3f669a34dd50f2ab7279c54eaa04",
+      "public_path": "/episode-06/gallery/human-neon-bunny-cyberpunk-hacker-diva-26.webp",
+      "public_bytes": 178930,
+      "title": "Neon Bunny Cyberpunk Hacker Diva",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Cyberpunk Hacker Diva-26.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Hypnotic Portal-25.png",
+      "source_bytes": 2323035,
+      "sha256": "cbef5bd7b2cbc83c32e784f09335c49c041e47956581bfd0540308087cd651a3",
+      "public_path": "/episode-06/gallery/human-neon-bunny-hypnotic-portal-25.webp",
+      "public_bytes": 112184,
+      "title": "Neon Bunny Hypnotic Portal",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Hypnotic Portal-25.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Rabbit Hole Subscribe-9.png",
+      "source_bytes": 2511621,
+      "sha256": "02698c1a55bfea362ebb86c932b502a4b0ebd3cdafa79cf4944c5cafde8fcd14",
+      "public_path": "/episode-06/gallery/human-neon-bunny-rabbit-hole-subscribe-9.webp",
+      "public_bytes": 157920,
+      "title": "Neon Bunny Rabbit Hole Subscribe",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Rabbit Hole Subscribe-9.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Shopping Temptress-1.png",
+      "source_bytes": 2408522,
+      "sha256": "e09645d5a0c9de3e94598c250c4494f5287c2f968f9020eb52688f5fde28279a",
+      "public_path": "/episode-06/gallery/human-neon-bunny-shopping-temptress-1.webp",
+      "public_bytes": 141264,
+      "title": "Neon Bunny Shopping Temptress",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Shopping Temptress-1.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Subscription Command Hub-6.png",
+      "source_bytes": 2401148,
+      "sha256": "7c6b34adb3d1aac816774378c96c72a419a5b85e9b2d30b87761608cd06b82fe",
+      "public_path": "/episode-06/gallery/human-neon-bunny-subscription-command-hub-6.webp",
+      "public_bytes": 151538,
+      "title": "Neon Bunny Subscription Command Hub",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Subscription Command Hub-6.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Subscription Contract-4.png",
+      "source_bytes": 2347814,
+      "sha256": "27b23ed149fe6d919f19f4852d32a140821b7723a03e2f277fa36169015540c2",
+      "public_path": "/episode-06/gallery/human-neon-bunny-subscription-contract-4.webp",
+      "public_bytes": 137722,
+      "title": "Neon Bunny Subscription Contract",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Subscription Contract-4.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Subscription Dashboard-7.png",
+      "source_bytes": 2583214,
+      "sha256": "b137bda91d32291ffa251597e4df2d5ee8679e30a13e9eaf5751c39c7dd45acf",
+      "public_path": "/episode-06/gallery/human-neon-bunny-subscription-dashboard-7.webp",
+      "public_bytes": 195974,
+      "title": "Neon Bunny Subscription Dashboard",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Subscription Dashboard-7.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Throne Temptation-15.png",
+      "source_bytes": 2430461,
+      "sha256": "bde769b089f81201ce731dea855d7e5809cfc96dcb76b758274cf1971993ed2c",
+      "public_path": "/episode-06/gallery/human-neon-bunny-throne-temptation-15.webp",
+      "public_bytes": 143306,
+      "title": "Neon Bunny Throne Temptation",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Throne Temptation-15.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Upgrade Offer-27.png",
+      "source_bytes": 2369007,
+      "sha256": "19de52e6b39b55fb7be884c69204066747268949cc1292221ee62b096f178135",
+      "public_path": "/episode-06/gallery/human-neon-bunny-upgrade-offer-27.webp",
+      "public_bytes": 151264,
+      "title": "Neon Bunny Upgrade Offer",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Upgrade Offer-27.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Villain in Cyberpunk Lair-14.png",
+      "source_bytes": 2404928,
+      "sha256": "8c8ed778ef8f955824cda22f2a7b3c38b090f56738e42fab821bd5daed3cbcea",
+      "public_path": "/episode-06/gallery/human-neon-bunny-villain-in-cyberpunk-lair-14.webp",
+      "public_bytes": 144318,
+      "title": "Neon Bunny Villain in Cyberpunk Lair",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Villain in Cyberpunk Lair-14.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Villain in Digital Tunnel-13.png",
+      "source_bytes": 2527256,
+      "sha256": "862d37e935b65b58bf3c071e5cc6cabeba7dd4b637b7b5f348964a19c3db2fcd",
+      "public_path": "/episode-06/gallery/human-neon-bunny-villain-in-digital-tunnel-13.webp",
+      "public_bytes": 161238,
+      "title": "Neon Bunny Villain in Digital Tunnel",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Villain in Digital Tunnel-13.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny Villain’s Rabbit Hole-19.png",
+      "source_bytes": 2615967,
+      "sha256": "f17b1f07f2c9434ca53508ebb6676309bc05897eaaa5d211cf8ae0a6bbfbd8e6",
+      "public_path": "/episode-06/gallery/human-neon-bunny-villain-s-rabbit-hole-19.webp",
+      "public_bytes": 174434,
+      "title": "Neon Bunny Villain’s Rabbit Hole",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny Villain’s Rabbit Hole-19.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Bunny’s Cyberpunk Sales Pitch-20.png",
+      "source_bytes": 2459996,
+      "sha256": "434efb951fafbf936af1688045ed285aba5406f571d92328cb2ee48864e81cb1",
+      "public_path": "/episode-06/gallery/human-neon-bunny-s-cyberpunk-sales-pitch-20.webp",
+      "public_bytes": 160974,
+      "title": "Neon Bunny’s Cyberpunk Sales Pitch",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Bunny’s Cyberpunk Sales Pitch-20.png"
+    },
+    {
+      "source": "artifacts/imagine_images/Neon BytePad Hacker Workspace-17.png",
+      "source_bytes": 2293225,
+      "sha256": "344caa968323f4ff2237e23197e0596f70646e7e2d7873e0b48a53202223ad64",
+      "public_path": "/episode-06/gallery/neon-bytepad-hacker-workspace-17.webp",
+      "public_bytes": 148380,
+      "title": "Neon BytePad Hacker Workspace",
+      "group": "Byte",
+      "filename": "Neon BytePad Hacker Workspace-17.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Cyber Bunny Upgrade Lady-2.png",
+      "source_bytes": 2245975,
+      "sha256": "e273e04cf23b5b63398b4351ce03b6a8c4da08b0a190679dadc7fae92f38ce88",
+      "public_path": "/episode-06/gallery/human-neon-cyber-bunny-upgrade-lady-2.webp",
+      "public_bytes": 129128,
+      "title": "Neon Cyber Bunny Upgrade Lady",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Cyber Bunny Upgrade Lady-2.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Cyberpunk Bunny Subscription Interface-5.png",
+      "source_bytes": 2508419,
+      "sha256": "ed059cb21b60824f24ba722b610676fd791a8386a4c450d8f0abb020644f0dd7",
+      "public_path": "/episode-06/gallery/human-neon-cyberpunk-bunny-subscription-interface-5.webp",
+      "public_bytes": 173064,
+      "title": "Neon Cyberpunk Bunny Subscription Interface",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Cyberpunk Bunny Subscription Interface-5.png"
+    },
+    {
+      "source": "artifacts/imagine_images/bunny.human/Neon Cyberpunk Bunny Upgrade Offer-21.png",
+      "source_bytes": 2483282,
+      "sha256": "55f87c15cae87de1412579342f46d1d51558474b463905069db05a38a1ca0445",
+      "public_path": "/episode-06/gallery/human-neon-cyberpunk-bunny-upgrade-offer-21.webp",
+      "public_bytes": 164120,
+      "title": "Neon Cyberpunk Bunny Upgrade Offer",
+      "group": "Bunny — human-style alternates",
+      "filename": "Neon Cyberpunk Bunny Upgrade Offer-21.png"
+    },
+    {
+      "source": "artifacts/imagine_images/Neon Cyberpunk Launch Plan with Sam-28.png",
+      "source_bytes": 2450035,
+      "sha256": "f42a56be9d7f515492749a53629947c589c7b27f828fe87a507dd5dab7d24c23",
+      "public_path": "/episode-06/gallery/neon-cyberpunk-launch-plan-with-sam-28.webp",
+      "public_bytes": 150636,
+      "title": "Neon Cyberpunk Launch Plan with Sam",
+      "group": "Sam",
+      "filename": "Neon Cyberpunk Launch Plan with Sam-28.png"
+    },
+    {
+      "source": "artifacts/imagine_images/Neon Cyberpunk Revenue Officer at Launch-30.png",
+      "source_bytes": 2475014,
+      "sha256": "310f30079aa8bb4201ba9ffa3301d6ca3beba485dbb13889f27d880a477ee274",
+      "public_path": "/episode-06/gallery/neon-cyberpunk-revenue-officer-at-launch-30.webp",
+      "public_bytes": 172092,
+      "title": "Neon Cyberpunk Revenue Officer at Launch",
+      "group": "Sam",
+      "filename": "Neon Cyberpunk Revenue Officer at Launch-30.png"
+    },
+    {
+      "source": "artifacts/imagine_images/Neon Cyberpunk UI Command Center-16.png",
+      "source_bytes": 2358722,
+      "sha256": "943fcd1d286be2be690a4de46c13da2ec1b3b1697432b3fb066ecf7511218092",
+      "public_path": "/episode-06/gallery/neon-cyberpunk-ui-command-center-16.webp",
+      "public_bytes": 164530,
+      "title": "Neon Cyberpunk UI Command Center",
+      "group": "Timbr / command room",
+      "filename": "Neon Cyberpunk UI Command Center-16.png"
+    },
+    {
+      "source": "artifacts/imagine_images/NXCore_ Legacy UI Restoration in Progress-23.png",
+      "source_bytes": 2407696,
+      "sha256": "275cdd33fba631ec5bc5d769514cd629518498f4cf84b1f9a59b72613b0e862b",
+      "public_path": "/episode-06/gallery/nxcore-legacy-ui-restoration-in-progress-23.webp",
+      "public_bytes": 157492,
+      "title": "NXCore  Legacy UI Restoration in Progress",
+      "group": "NXCore",
+      "filename": "NXCore_ Legacy UI Restoration in Progress-23.png"
+    },
+    {
+      "source": "artifacts/imagine_images/NXCore_ Still Running-22.png",
+      "source_bytes": 2885420,
+      "sha256": "daaf3da186fd699d02524410b9093883ef037bc6b3141d2bdc71a9dc32c62526",
+      "public_path": "/episode-06/gallery/nxcore-still-running-22.webp",
+      "public_bytes": 235620,
+      "title": "NXCore  Still Running",
+      "group": "NXCore",
+      "filename": "NXCore_ Still Running-22.png"
+    },
+    {
+      "source": "artifacts/imagine_images/NXCore_ The $29.99 Rabbit Hole-24.png",
+      "source_bytes": 2661819,
+      "sha256": "805b4799caf690f239d1618b8b23d59d90e51d6f87a30da0f74986150a2659f1",
+      "public_path": "/episode-06/gallery/nxcore-the-29-99-rabbit-hole-24.webp",
+      "public_bytes": 196192,
+      "title": "NXCore  The $29.99 Rabbit Hole",
+      "group": "NXCore",
+      "filename": "NXCore_ The $29.99 Rabbit Hole-24.png"
+    },
+    {
+      "source": "artifacts/imagine_images/Timbr’s Neon Legacy Launch-18.png",
+      "source_bytes": 2316516,
+      "sha256": "2bf8400621d87b3c817e7630f108f280997919b85805678c00c86af2ccbb20c4",
+      "public_path": "/episode-06/gallery/timbr-s-neon-legacy-launch-18.webp",
+      "public_bytes": 153552,
+      "title": "Timbr’s Neon Legacy Launch",
+      "group": "Timbr / command room",
+      "filename": "Timbr’s Neon Legacy Launch-18.png"
+    }
+  ],
+  "audio": [
+    {
+      "title": "One Yellow Sticky Note",
+      "source": "artifacts/voices/One Yellow Sticky Note.mp3",
+      "sha256": "20eae54fb92f23f004072fce6a7fa658448339dedd640811aab6613ef7bb9313",
+      "public_path": "/episode-06/audio/one-yellow-sticky-note.mp3",
+      "bytes": 8864229,
+      "duration_seconds": 401.78
+    },
+    {
+      "title": "Archive of Almost Done Things",
+      "source": "artifacts/voices/Archive of Almost Done Things.mp3",
+      "sha256": "afbb4587dad96ad913994f408c017c573701a1d7bef7312426f659874c2ba5b6",
+      "public_path": "/episode-06/audio/archive-of-almost-done-things.mp3",
+      "bytes": 1996292,
+      "duration_seconds": 92.59
+    },
+    {
+      "title": "Almost Shipped",
+      "source": "artifacts/voices/Almost Shipped.mp3",
+      "sha256": "6a25003bcd0c68c4b0114183de2638c43690e8545193c39ba11e4aa2d024484c",
+      "public_path": "/episode-06/audio/almost-shipped.mp3",
+      "bytes": 2295208,
+      "duration_seconds": 94.03
+    },
+    {
+      "title": "The Toaster Has a Release",
+      "source": "artifacts/voices/The Toaster Has a Release.mp3",
+      "sha256": "a1cc2934a58018aec6f2cddcb08c14419436395a0fdf4c1a71ca7ca2f9537474",
+      "public_path": "/episode-06/audio/the-toaster-has-a-release.mp3",
+      "bytes": 3717400,
+      "duration_seconds": 169.63
+    },
+    {
+      "title": "Who Gave the Cat a Create",
+      "source": "artifacts/voices/Who Gave the Cat a Create.mp3",
+      "sha256": "371261211a76c57915eff23a0668259b8103b156cd8a9098ffa15e8e0413665d",
+      "public_path": "/episode-06/audio/who-gave-the-cat-a-create.mp3",
+      "bytes": 1658011,
+      "duration_seconds": 86.42
+    },
+    {
+      "title": "Sticky Note",
+      "source": "artifacts/voices/Sticky Note.mp3",
+      "sha256": "044e7eb92f6b15f9c22f064d5e43450ebf8191b80322ad61f9333497fb6e8b2f",
+      "public_path": "/episode-06/audio/sticky-note.mp3",
+      "bytes": 2669363,
+      "duration_seconds": 117.62
+    },
+    {
+      "title": "Merging Stories",
+      "source": "artifacts/voices/Merging Stories.mp3",
+      "sha256": "876ff36d7a65b52d7117ef11d64c052681a14d20ffc816e2e4cdcb61b76764ce",
+      "public_path": "/episode-06/audio/merging-stories.mp3",
+      "bytes": 6407443,
+      "duration_seconds": 299.16
+    }
+  ],
+  "videos": [
+    {
+      "source": "artifacts/imagine_videos/0018f5fd-8eb8-446a-a145-71d4bd8e6496.mp4",
+      "bytes": 11396194,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/116bf8a3-3bd0-4ba3-a25b-3f6bc2b1604d.mp4",
+      "bytes": 9732859,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/1184b72f-73a4-438d-a3d9-d91c89681fa3.mp4",
+      "bytes": 2715019,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/14d70af9-dd05-4bed-a471-10dbd58cfb01.mp4",
+      "bytes": 7315124,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/15ccd2c5-402c-4771-9ac0-3d4a9fd1f744.mp4",
+      "bytes": 5163976,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/1c6267a9-49a8-4624-bc08-e525449ef0b6.mp4",
+      "bytes": 8238778,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/21e61789-9c92-4afa-a548-eec3adfa2bb1.mp4",
+      "bytes": 8136582,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/35c89c87-0915-423f-a95b-1acb8b8208f5.mp4",
+      "bytes": 9192038,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/45e6b7ac-adc2-491e-82b9-f352454d4c39.mp4",
+      "bytes": 9748395,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/48fb35bc-5666-43ec-98d2-6cedeb67a463.mp4",
+      "bytes": 4304950,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/5905dcb2-7b58-4120-be59-a4e3c84c469e.mp4",
+      "bytes": 8587249,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/5e7572f9-0fc6-46ba-9f12-61538703ce88.mp4",
+      "bytes": 17269675,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/6c6991f6-c3d9-4aa8-940e-7bd7b4b658b7.mp4",
+      "bytes": 9877903,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/6da837fd-1a63-42fd-8087-4a23572ca29d.mp4",
+      "bytes": 6285066,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/79723d40-5294-450c-926d-51cfce3381e5.mp4",
+      "bytes": 8459507,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/7d536e44-85fb-494e-b141-569e561671c4.mp4",
+      "bytes": 9998123,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/845c618c-c1ec-4c6a-8195-adb1c0a0f41c.mp4",
+      "bytes": 9884923,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/85ca573b-9b7a-49a3-9463-48de170ad9c9.mp4",
+      "bytes": 6705251,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/86c50c06-609e-47de-9910-cdfd88254323.mp4",
+      "bytes": 8900894,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/95c52896-e648-4196-9b74-232a0bde6a1d.mp4",
+      "bytes": 7730256,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/9d3c3905-ff8f-409a-802c-0148f6f79651.mp4",
+      "bytes": 13489946,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/One-Two-Six-lyric-cut-chat (1).mp4",
+      "bytes": 159557366,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/One-Two-Six-lyric-cut-chat.mp4",
+      "bytes": 159557366,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/One-Two-Six-movie-cut-chat (1).mp4",
+      "bytes": 164935049,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/One-Two-Six-movie-cut-chat.mp4",
+      "bytes": 164935049,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/One-Two-Six-music-video-chat (1).mp4",
+      "bytes": 82104092,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/One-Two-Six-music-video-chat (2).mp4",
+      "bytes": 82104092,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/One-Two-Six-music-video-chat.mp4",
+      "bytes": 82104092,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/One-Two-Six-transitions-cut-chat.mp4",
+      "bytes": 171091892,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/a82f1693-88c6-4c46-8233-9957a8dbfcb7.mp4",
+      "bytes": 7977479,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/a8b46ab6-6bba-4127-92d3-3705bf8ece3c.mp4",
+      "bytes": 10939255,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/bc2e5bd0-f71a-4fe9-a959-1ccfe2adaabe.mp4",
+      "bytes": 9650105,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/caf88b43-1256-40d9-ad84-5883d9189dcf.mp4",
+      "bytes": 7576047,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/cu_singer_finale.mp4",
+      "bytes": 6427892,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/e05-cut (1) - Copy.mp4",
+      "bytes": 237108865,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/e86aae23-590a-42ba-952b-5fd9747b199d.mp4",
+      "bytes": 11368025,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/ed1cd735-85ec-4572-b1be-2ddbaaf3b110.mp4",
+      "bytes": 4614232,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/eoy-cut.mp4",
+      "bytes": 150004385,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/f862cc7d-49ee-4323-a6d1-6de154d38779.mp4",
+      "bytes": 16273547,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/ff9b15e6-bd0d-43f5-a770-08cb85453580.mp4",
+      "bytes": 7461900,
+      "status": "NXCore-only"
+    },
+    {
+      "source": "artifacts/imagine_videos/scene03_concert.mp4",
+      "bytes": 36628316,
+      "status": "NXCore-only"
+    }
+  ],
+  "other": {
+    "older_images": [
+      {
+        "source": "artifacts/imagine_images/126.music_vid (1).png",
+        "bytes": 3272912
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (10).png",
+        "bytes": 3105251
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (2).png",
+        "bytes": 3137634
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (3).png",
+        "bytes": 3001397
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (4).png",
+        "bytes": 3631001
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (5).png",
+        "bytes": 2463216
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (6).png",
+        "bytes": 3258266
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (7).png",
+        "bytes": 3793550
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (8).png",
+        "bytes": 3395504
+      },
+      {
+        "source": "artifacts/imagine_images/126.music_vid (9).png",
+        "bytes": 3485923
+      },
+      {
+        "source": "artifacts/imagine_images/Bunny’s Neon Digital Throne-6.png",
+        "bytes": 2857773
+      },
+      {
+        "source": "artifacts/imagine_images/Neon Archive of Unfinished Genius-1.png",
+        "bytes": 2806964
+      },
+      {
+        "source": "artifacts/imagine_images/Neon Bunny Karaoke Takeover-3.png",
+        "bytes": 2905589
+      },
+      {
+        "source": "artifacts/imagine_images/Neon Bunny Product Factory-2.png",
+        "bytes": 2322728
+      },
+      {
+        "source": "artifacts/imagine_images/Neon Bunny Takes Over the Command Room-2.png",
+        "bytes": 2773550
+      },
+      {
+        "source": "artifacts/imagine_images/Neon Rabbit Tribunal Showdown-4.png",
+        "bytes": 2693942
+      },
+      {
+        "source": "artifacts/imagine_images/The $29.99 Rabbit Hole-1.png",
+        "bytes": 2877430
+      },
+      {
+        "source": "artifacts/imagine_images/The Bunny’s Digital Dominion-5.png",
+        "bytes": 2902466
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (1).png",
+        "bytes": 2887936
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (10).png",
+        "bytes": 3515769
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (2).png",
+        "bytes": 3728916
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (3).png",
+        "bytes": 3053922
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (4).png",
+        "bytes": 2753037
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (5).png",
+        "bytes": 3889225
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (6).png",
+        "bytes": 3846126
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (7).png",
+        "bytes": 3252575
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (8).png",
+        "bytes": 2777529
+      },
+      {
+        "source": "artifacts/imagine_images/bunny wworld (9).png",
+        "bytes": 3486974
+      },
+      {
+        "source": "artifacts/imagine_images/byte.png",
+        "bytes": 2722036
+      }
+    ],
+    "historic_audio": [
+      {
+        "source": "artifacts/voices/One-Two-Six.mp3",
+        "bytes": 4374547
+      },
+      {
+        "source": "artifacts/voices/ann-end.mp3",
+        "bytes": 57216
+      },
+      {
+        "source": "artifacts/voices/ann-open.mp3",
+        "bytes": 51840
+      },
+      {
+        "source": "artifacts/voices/byte-1.mp3",
+        "bytes": 36480
+      },
+      {
+        "source": "artifacts/voices/byte-2.mp3",
+        "bytes": 41856
+      },
+      {
+        "source": "artifacts/voices/cat-1.mp3",
+        "bytes": 46848
+      },
+      {
+        "source": "artifacts/voices/cat-2.mp3",
+        "bytes": 16128
+      },
+      {
+        "source": "artifacts/voices/nx-1.mp3",
+        "bytes": 139008
+      },
+      {
+        "source": "artifacts/voices/nx-2.mp3",
+        "bytes": 72576
+      },
+      {
+        "source": "artifacts/voices/nx-3.mp3",
+        "bytes": 31488
+      },
+      {
+        "source": "artifacts/voices/nx-4.mp3",
+        "bytes": 26496
+      },
+      {
+        "source": "artifacts/voices/sam-1.mp3",
+        "bytes": 82560
+      },
+      {
+        "source": "artifacts/voices/sam-2.mp3",
+        "bytes": 103296
+      },
+      {
+        "source": "artifacts/voices/sam-3.mp3",
+        "bytes": 26496
+      },
+      {
+        "source": "artifacts/voices/tim-1.mp3",
+        "bytes": 113280
+      },
+      {
+        "source": "artifacts/voices/tim-2.mp3",
+        "bytes": 26496
+      },
+      {
+        "source": "artifacts/voices/tim-3.mp3",
+        "bytes": 16128
+      },
+      {
+        "source": "artifacts/voices/tim-4.mp3",
+        "bytes": 103296
+      },
+      {
+        "source": "artifacts/voices/ves-1.mp3",
+        "bytes": 82560
+      },
+      {
+        "source": "artifacts/voices/ves-2.mp3",
+        "bytes": 57216
+      }
+    ]
+  }
+}
